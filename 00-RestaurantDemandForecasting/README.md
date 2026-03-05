@@ -183,28 +183,6 @@ This improves transparency and trust in the forecasting model.
 
 ---
 
-### Project Structure
-
-restaurant-demand-forecasting/
-
-├── data/
-│ ├── restaurant_orders.csv
-│ └── restaurant_features.csv
-│
-├── models/
-│ └── demand_forecasting_model.pkl
-│
-├── notebooks/
-│ ├── 01_dataset_generation.ipynb
-│ ├── 02_exploratory_analysis.ipynb
-│ ├── 03_feature_engineering.ipynb
-│ ├── 04_model_training.ipynb
-│ └── 05_model_explainability.ipynb
-│
-└── README.md
-
----
-
 ### Technologies Used
 
 Python libraries used in this project include:
