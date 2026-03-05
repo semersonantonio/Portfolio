@@ -224,5 +224,7 @@ Potential improvements include:
 
 ### Author
 Emerson Antonio da Silva
-Data Science Portfolio Project  
+
+Data Science Portfolio Project
+
 Restaurant Demand Forecasting with Machine Learning
