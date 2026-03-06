@@ -9,24 +9,7 @@ Each project explores datasets and demonstrates skills in **data analysis, model
 
 ### Projects
 
-### 1️ Perception Analysis in R
-**Folder:** `00-PercepWorkAmaGoo-R`
-
-Statistical analysis project using **R** to explore perception-related data.
-
-#### Goals
-- Perform statistical exploration
-- Apply R for data analysis
-- Interpret statistical outputs
-
-#### Techniques Used
-- R programming
-- Statistical analysis
-- Data visualization
-
----
-
-### 2️ Liver Disease Prediction
+### 1️ Liver Disease Prediction
 **Folder:** `01-ForecastForLiverDiseases-project`
 
 Predictive modeling project to detect **liver disease risk based on medical indicators**.
@@ -44,7 +27,7 @@ Predictive modeling project to detect **liver disease risk based on medical indi
 
 ---
 
-### 3️ Gym Churn Prediction
+### 2 Gym Churn Prediction
 **Folder:** `02-analysisGym`
 
 Machine learning project focused on predicting **customer churn in a gym environment**.
@@ -62,7 +45,7 @@ Machine learning project focused on predicting **customer churn in a gym environ
 
 ---
 
-### 4️ Restaurant Demand Forecasting
+### 3 Restaurant Demand Forecasting
 **Folder:** `03-RestaurantDemandForecasting`
 
 Machine learning project focused on **forecasting daily restaurant demand using time-series features**.
