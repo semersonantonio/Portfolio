@@ -40,21 +40,27 @@ Below are key visualizations generated during the analysis.
 
 ---
 
-## Revenue Trend
+## Revenue Distribution
 
-The dataset simulates realistic revenue dynamics including growth trends and demand fluctuations.
+This visualization shows how revenue is distributed across different engagement segments.
 
-![Revenue Trend](figures/exploratory_analysis/daily_revenue_trend.png)
+![Revenue by Engagement](figures/exploratory_analysis/revenue_by_engagement_segment.png)
 
 ---
 
-## Weekly Purchasing Patterns
+## Revenue Contribution (Pareto Analysis)
 
-Customer purchasing activity often varies across weekdays.
+The Pareto curve highlights that a small portion of customers contributes a large share of total revenue.
 
-![Weekday Seasonality](figures/exploratory_analysis/weekday_seasonality.png)
+![Pareto Revenue Curve](figures/exploratory_analysis/pareto_revenue_curve.png)
 
-These patterns help explain short-term revenue fluctuations.
+---
+
+## Loyalty vs Non-Loyalty Customers
+
+Loyalty program members typically generate higher revenue compared to non-members.
+
+![Loyalty Revenue](figures/exploratory_analysis/loyalty_vs_non_loyalty_revenue.png)
 
 ---
 
