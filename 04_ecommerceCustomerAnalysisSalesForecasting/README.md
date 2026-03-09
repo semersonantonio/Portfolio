@@ -1,45 +1,36 @@
 # E-commerce Customer Analytics and Sales Forecasting
 
-End-to-end Data Science project simulating a real-world e-commerce analytics pipeline.
+End-to-end Data Science project simulating a realistic analytics pipeline for an e-commerce platform.
 
-This project demonstrates how machine learning and data analysis can be applied to understand customer behavior and forecast sales in an online retail environment.
+This project demonstrates how machine learning and data analysis can be applied to:
 
-The project covers the full lifecycle of a data science workflow, including:
+- understand customer purchasing behavior
+- segment customers for targeted marketing
+- forecast future revenue
+- interpret machine learning models
 
-- data generation
-- exploratory data analysis
-- feature engineering
-- customer segmentation
-- sales forecasting
-- model explainability
+The project replicates the workflow typically used in real-world data science environments.
 
 ---
 
-## Project Goals
+# Project Overview
 
-This project focuses on solving two core business problems commonly faced by e-commerce companies.
+E-commerce companies generate large volumes of behavioral and transactional data.  
+Analyzing this data allows businesses to better understand customer behavior and predict future demand.
 
-### Customer Analytics
+This project builds a complete machine learning pipeline for:
 
-Understanding customer behavior is critical for designing effective marketing strategies.
+Customer analytics
 
-Customer segmentation enables businesses to:
+- identifying customer segments
+- understanding purchasing behavior
+- supporting targeted marketing strategies
 
-- personalize marketing campaigns
-- identify high-value customers
-- improve customer retention
-- optimize promotional strategies
+Sales forecasting
 
-### Sales Forecasting
-
-Reliable revenue forecasting supports several operational decisions:
-
-- inventory planning
-- marketing campaign scheduling
-- staffing and logistics planning
-- financial forecasting
-
-Machine learning models are used to predict daily revenue based on historical purchasing behavior and temporal patterns.
+- predicting future revenue
+- identifying demand trends
+- supporting operational planning
 
 ---
 
@@ -47,186 +38,189 @@ Machine learning models are used to predict daily revenue based on historical pu
 
 Below are key visualizations generated during the analysis.
 
+---
+
 ## Revenue Trend
 
-The dataset simulates realistic daily revenue patterns including growth trends and seasonality.
+The dataset simulates realistic revenue dynamics including growth trends and demand fluctuations.
 
-![Revenue Trend](figures/daily_revenue_trend.png)
+![Revenue Trend](figures/exploratory_analysis/daily_revenue_trend.png)
 
 ---
 
 ## Weekly Purchasing Patterns
 
-Customer purchasing behavior often varies by day of week.
+Customer purchasing activity often varies across weekdays.
 
-![Weekday Seasonality](figures/weekday_seasonality.png)
+![Weekday Seasonality](figures/exploratory_analysis/weekday_seasonality.png)
 
-This pattern is common in e-commerce environments where weekend shopping behavior differs from weekday activity.
+These patterns help explain short-term revenue fluctuations.
 
 ---
 
 ## Forecasting Model Performance
 
-Multiple machine learning models were evaluated for revenue forecasting.
+Multiple machine learning models were evaluated for predicting daily revenue.
 
-![Model RMSE Comparison](figures/model_rmse_comparison.png)
+![Model Comparison](figures/sales_forecasting/model_rmse_comparison.png)
 
-Tree-based ensemble models significantly outperform the baseline forecast.
+Tree-based ensemble models significantly outperform simple baseline forecasts.
 
 ---
 
 ## Forecast vs Actual Revenue
 
-The best-performing model captures the overall revenue trend and daily fluctuations.
+The best-performing model captures both overall trends and short-term fluctuations in sales.
 
-![Forecast vs Actual](figures/forecast_vs_actual.png)
+![Forecast vs Actual](figures/sales_forecasting/forecast_vs_actual.png)
 
 ---
 
 ## Feature Importance
 
-The most influential predictors of revenue are shown below.
+Feature importance analysis identifies the most influential predictors of revenue.
 
-![Feature Importance](figures/feature_importance.png)
+![Feature Importance](figures/sales_forecasting/feature_importance.png)
 
 Key drivers include:
 
-- order volume
+- daily order volume
 - recent revenue trends
 - rolling averages
 - temporal features
 
 ---
 
+## Model Explainability
+
+SHAP explainability techniques were used to interpret the forecasting model.
+
+![SHAP Summary](figures/model_explainability/shap_summary_plot.png)
+
+SHAP values help explain how individual variables influence model predictions.
+
+---
+
 # Dataset
 
-Since real-world e-commerce data is often proprietary, this project generates a **synthetic dataset** designed to mimic realistic online retail activity.
+Since real-world e-commerce datasets are typically proprietary, this project generates a synthetic dataset designed to mimic realistic online retail behavior.
 
-The dataset includes multiple types of variables:
+The dataset includes several categories of variables.
 
-### Customer Attributes
+### Customer attributes
 
 - customer_id
 - age
 - income
 - country
-- loyalty_member
-- signup_date
+- loyalty membership
+- signup date
 
-### Behavioral Variables
+### Behavioral variables
 
-- total_orders
-- total_spent
-- average_order_value
-- days_since_last_purchase
-- website_visits
-- app_usage
-- discount_usage
+- total orders
+- total spent
+- average order value
+- days since last purchase
+- website visits
+- app usage
+- discount usage
 
-### Transactional Variables
+### Transaction variables
 
-- order_date
-- order_value
-- product_category
-- promotion
-- marketing_campaign
+- order date
+- order value
+- product category
+- promotion flag
+- marketing campaigns
 
-### Temporal Variables
+### Temporal features
 
+- day of week
 - month
-- weekday
-- seasonal patterns
-- rolling revenue statistics
-- lag features
+- seasonal indicators
+- rolling statistics
+- lag variables
 
-The synthetic data incorporates realistic behaviors including:
+The synthetic dataset incorporates realistic dynamics such as:
 
-- seasonal fluctuations
-- promotions and campaigns
+- seasonal demand patterns
+- promotional campaigns
 - gradual platform growth
-- random demand variability
+- random purchasing variability
+
 
 ---
 
-# Project Structure
+# Project Workflow
 
-The project is organized into multiple notebooks representing each stage of the data science workflow.
-ecommerce-analytics-forecasting
-│
-├── notebooks
-│   ├── 01_dataset_generation.ipynb
-│   ├── 02_exploratory_analysis.ipynb
-│   ├── 03_feature_engineering.ipynb
-│   ├── 04_customer_segmentation.ipynb
-│   ├── 05_sales_forecasting.ipynb
-│   └── 06_model_explainability.ipynb
-│
-├── data
-│   ├── raw
-│   └── processed
-│
-├── figures
-│
-├── src
-│
-├── requirements.txt
-│
-└── README.md
+The project is organized into several notebooks representing each stage of the data science pipeline.
 
 ---
 
-# Methodology
+## 1 Dataset Generation
 
-## Exploratory Data Analysis
+Synthetic e-commerce data is generated to simulate realistic customer behavior and transactional activity.
 
-Exploratory analysis was conducted to understand the structure and dynamics of the dataset.
+Key characteristics:
 
-Key analyses included:
-
-- revenue trend analysis
-- customer purchasing patterns
-- seasonal behavior
-- correlation analysis
+- seasonal demand patterns
+- promotional effects
+- customer behavior variability
+- long-term growth trends
 
 ---
 
-## Feature Engineering
+## 2 Exploratory Data Analysis
 
-Several predictive features were created to improve model performance.
+Exploratory analysis investigates the structure and patterns within the dataset.
+
+Key analyses include:
+
+- revenue trends
+- purchasing seasonality
+- behavioral correlations
+- distribution of customer metrics
+
+---
+
+## 3 Feature Engineering
+
+New predictive features are created to improve machine learning performance.
 
 Examples include:
 
 - lag features
 - rolling averages
-- rolling standard deviation
+- rolling volatility
+- RFM-style metrics
 - temporal encodings
-- behavioral metrics
 
 These features capture both short-term and long-term patterns in purchasing behavior.
 
 ---
 
-## Customer Segmentation
+## 4 Customer Segmentation
 
-Clustering algorithms were used to identify distinct customer groups.
+Clustering techniques are applied to identify groups of customers with similar purchasing patterns.
 
-Algorithms evaluated:
+Algorithms evaluated include:
 
 - K-Means
 - Hierarchical Clustering
 - DBSCAN
 
-Customer segments can support:
+Customer segmentation can support:
 
-- targeted promotions
-- retention campaigns
-- personalized recommendations
+- targeted marketing campaigns
+- loyalty programs
+- personalized promotions
 
 ---
 
-## Sales Forecasting
+## 5 Sales Forecasting
 
-Machine learning models were trained to predict daily revenue.
+Machine learning models are trained to forecast daily revenue.
 
 Models evaluated:
 
@@ -235,32 +229,29 @@ Models evaluated:
 - Gradient Boosting
 - XGBoost
 
-Evaluation metrics:
+Evaluation metrics include:
 
 - MAE
 - RMSE
 - R²
 - MAPE
 
-Residual diagnostics and forecast visualizations were also used to assess model performance.
+Residual diagnostics and forecast visualizations are used to validate model performance.
 
 ---
 
-# Model Explainability
+## 6 Model Explainability
 
-Machine learning models can be difficult to interpret.
+To understand model behavior, SHAP explainability techniques are applied.
 
-To address this challenge, SHAP (SHapley Additive Explanations) was used to interpret the forecasting model.
+The analysis includes:
 
-![SHAP Summary](figures/shap_summary_plot.png)
+- global feature importance
+- SHAP summary plots
+- feature dependence analysis
+- local prediction explanations
 
-SHAP analysis provides both global and local explanations of model predictions.
-
-Global explanations identify which variables most strongly influence predictions.
-
-Local explanations show how individual features contribute to specific predictions.
-
-This transparency helps increase trust in machine learning systems.
+Explainability provides transparency into how the forecasting model generates predictions.
 
 ---
 
@@ -268,22 +259,22 @@ This transparency helps increase trust in machine learning systems.
 
 Several insights emerged from the analysis.
 
-### Revenue Drivers
+### Revenue drivers
 
-The most influential predictors of revenue include:
+Revenue predictions are strongly influenced by:
 
-- daily order volume
-- recent revenue trends
+- order volume
+- recent purchasing activity
 - rolling revenue statistics
-- temporal patterns such as day-of-week
+- temporal purchasing patterns
 
-### Forecasting Performance
+### Forecasting performance
 
-Ensemble models significantly outperform simple baseline forecasting methods.
+Ensemble machine learning models significantly outperform simple baseline forecasts.
 
-Gradient Boosting achieved the best overall performance across evaluation metrics.
+Gradient Boosting achieved the best predictive performance.
 
-### Customer Behavior
+### Customer behavior
 
 Customer segmentation reveals distinct purchasing patterns that can inform marketing strategies.
 
@@ -291,21 +282,21 @@ Customer segmentation reveals distinct purchasing patterns that can inform marke
 
 # Business Applications
 
-This analysis supports several real-world business decisions:
+This analysis supports several real-world business decisions.
 
-Inventory planning
+### Inventory planning
 
-Forecasting demand helps reduce stockouts and overstock situations.
+Demand forecasts help reduce stockouts and excess inventory.
 
-Marketing strategy
+### Marketing strategy
 
 Customer segmentation enables targeted promotional campaigns.
 
-Operational planning
+### Operational planning
 
 Revenue forecasts support logistics and staffing decisions.
 
-Financial planning
+### Financial planning
 
 Sales forecasts inform budgeting and revenue projections.
 
@@ -313,7 +304,9 @@ Sales forecasts inform budgeting and revenue projections.
 
 # Technologies Used
 
-Python ecosystem:
+Python ecosystem
+
+Main libraries:
 
 - pandas
 - numpy
@@ -328,12 +321,12 @@ Python ecosystem:
 
 # Future Improvements
 
-Potential extensions of this project include:
+Possible extensions of this project include:
 
 - product-level demand forecasting
 - real-time forecasting dashboards
 - automated model retraining pipelines
-- deployment as an API or web application
+- deployment of forecasting models as an API
 
 ---
 
@@ -343,4 +336,4 @@ Emerson Antonio da Silva
 
 Data Science Portfolio Project
 
-E-commerce Analytics and Sales Forecasting
+E-commerce Customer Analytics and Sales Forecasting
