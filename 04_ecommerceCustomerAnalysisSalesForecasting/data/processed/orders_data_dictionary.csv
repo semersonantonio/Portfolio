@@ -1,0 +1,9 @@
+column_name,data_type
+order_id,int64
+customer_id,int64
+order_date,datetime64[ns]
+promotion,bool
+holiday,object
+product_category,object
+order_value,float64
+marketing_campaign,object

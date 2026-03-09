@@ -1,0 +1,16 @@
+column_name,data_type
+customer_id,int64
+signup_date,datetime64[ns]
+age,int64
+income,int64
+country,object
+loyalty_member,bool
+website_visits,int64
+app_usage,int64
+discount_usage,bool
+engagement_score,float64
+purchase_propensity,float64
+total_orders,float64
+total_spent,float64
+average_order_value,float64
+days_since_last_purchase,float64
