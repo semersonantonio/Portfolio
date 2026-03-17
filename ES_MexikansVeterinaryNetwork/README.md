@@ -158,7 +158,7 @@ Resultados del mejor modelo:
 - MAE ≈ 0.84 visitas  
 - RMSE ≈ 1.08 visitas  
 
-![Forecast vs Actual](figures/05_demand_forecasting/predicted_vs_actual_explainability.png)
+![Forecast vs Actual](figures/06_model_explainability/predicted_vs_actual_explainability.png)
 
 El modelo captura adecuadamente la tendencia de la demanda con errores bajos.
 
