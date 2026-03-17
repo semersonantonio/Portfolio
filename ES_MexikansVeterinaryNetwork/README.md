@@ -158,7 +158,7 @@ Resultados del mejor modelo:
 - MAE ≈ 0.84 visitas  
 - RMSE ≈ 1.08 visitas  
 
-![Forecast vs Actual](figures/05_demand_forecasting/forecast_vs_actual.png)
+![Forecast vs Actual](figures/05_demand_forecasting/predicted_vs_actual_explainability.png)
 
 El modelo captura adecuadamente la tendencia de la demanda con errores bajos.
 
@@ -168,7 +168,7 @@ El modelo captura adecuadamente la tendencia de la demanda con errores bajos.
 
 #### Importancia de Variables
 
-![Feature Importance](figures/06_model_explainability/feature_importance.png)
+![Feature Importance](figures/06_model_explainability/rf_feature_importance.png)
 
 Las variables más relevantes son:
 
@@ -180,7 +180,7 @@ Las variables más relevantes son:
 
 #### Análisis SHAP
 
-![SHAP Summary](figures/06_model_explainability/shap_summary.png)
+![SHAP Summary](figures/06_model_explainability/shap_summary_beeswarm.png)
 
 El análisis muestra que:
 
