@@ -1,0 +1,9 @@
+service_type,avg_treatment_cost,avg_medication_cost,complexity
+General Consultation,40,15,Low
+Vaccination,30,10,Low
+Lab Tests,70,20,Medium
+Dental Cleaning,120,25,Medium
+Minor Surgery,250,80,High
+Major Surgery,600,200,High
+Imaging,150,30,Medium
+Emergency Care,180,50,High

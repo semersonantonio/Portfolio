@@ -1,0 +1,15 @@
+city,state,population_factor,price_factor
+Ciudad de México,CDMX,1.4,1.25
+Guadalajara,Jalisco,1.2,1.15
+Monterrey,Nuevo León,1.25,1.2
+Puebla,Puebla,1.0,1.0
+Tijuana,Baja California,1.1,1.05
+Mérida,Yucatán,0.9,0.95
+Cancún,Quintana Roo,0.95,1.05
+Querétaro,Querétaro,1.0,1.05
+León,Guanajuato,0.95,0.95
+Chihuahua,Chihuahua,0.9,0.95
+Hermosillo,Sonora,0.9,0.95
+Toluca,Estado de México,0.95,0.95
+San Luis Potosí,San Luis Potosí,0.9,0.95
+Aguascalientes,Aguascalientes,0.9,0.95
