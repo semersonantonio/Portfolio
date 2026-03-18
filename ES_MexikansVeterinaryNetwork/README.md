@@ -153,30 +153,38 @@ El problema se formula como una tarea de regresión para predecir el número de 
 #### Variables utilizadas:
 
 - variables rezagadas (lags)  
-- medias móviles  
+- medias móviles (rolling averages)  
+- medidas de variabilidad  
 - variables temporales  
 
-#### Modelos evaluados:
+### Modelos evaluados:
 
+- Naive baseline  
 - Linear Regression  
 - Random Forest  
 - Gradient Boosting  
 
 ---
 
-#### Desempeño del Modelo
+### Selección del Modelo
 
-Los modelos basados en árboles presentan mejor rendimiento debido a relaciones no lineales.
+El modelo de **Gradient Boosting** fue seleccionado como modelo final debido a su mejor desempeño global.
 
-Resultados del mejor modelo:
+Resultados aproximados:
 
-- R² ≈ 0.95  
-- MAE ≈ 0.84 visitas  
-- RMSE ≈ 1.08 visitas  
+- MAE ≈ 2–3 visitas  
+- RMSE ≈ 2.9 visitas  
+- R² ≈ 0.66  
 
-![Forecast vs Actual](figures/06_model_explainability/predicted_vs_actual_explainability.png)
+Estos resultados indican que el modelo captura de forma efectiva los patrones temporales de la demanda.
 
-El modelo captura adecuadamente la tendencia de la demanda con errores bajos.
+---
+
+#### Predicción vs Realidad
+
+![Forecast vs Actual](figures/05_demand_forecasting/forecast_vs_actual_timeseries.png)
+
+El modelo logra seguir adecuadamente la tendencia de la demanda, con desviaciones limitadas en periodos de alta variabilidad.
 
 ---
 
@@ -184,13 +192,13 @@ El modelo captura adecuadamente la tendencia de la demanda con errores bajos.
 
 #### Importancia de Variables
 
-![Feature Importance](figures/06_model_explainability/rf_feature_importance.png)
+![Feature Importance](figures/05_demand_forecasting/forecast_feature_importance.png)
 
-Las variables más relevantes son:
+Las variables más relevantes están asociadas a:
 
 - demanda reciente  
 - medias móviles  
-- variables temporales  
+- patrones temporales  
 
 ---
 
@@ -201,12 +209,12 @@ Las variables más relevantes son:
 El análisis muestra que:
 
 - la demanda reciente es el principal predictor  
-- existen efectos temporales claros  
-- la demanda presenta dependencia de corto plazo  
+- existen patrones semanales claros  
+- la demanda presenta fuerte dependencia temporal  
 
 ---
 
-### Aplicaciones Operativas
+#### Aplicaciones Operativas
 
 Las predicciones permiten:
 
@@ -215,11 +223,11 @@ Las predicciones permiten:
 - mejorar la asignación de recursos  
 - anticipar picos de demanda  
 
-Por ejemplo, si un veterinario atiende ~24 consultas diarias, el modelo permite estimar necesidades de personal.
+Por ejemplo, si un veterinario atiende aproximadamente 24 consultas diarias, el modelo permite estimar el número necesario de profesionales por día.
 
 ---
 
-### Tecnologías
+#### Tecnologías
 
 - Python  
 - Pandas  
@@ -232,6 +240,6 @@ Por ejemplo, si un veterinario atiende ~24 consultas diarias, el modelo permite 
 
 ---
 
-### Autor
+#### Autor
 
 Emerson Antonio da Silva
