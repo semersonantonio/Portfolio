@@ -9,20 +9,28 @@ This repository showcases projects focused on predictive analytics, machine lear
 ## 01 Mexikans Analytics — Demand Forecasting for Veterinary Clinics  
 **Folder:** `ES_MexikansVeterinaryNetwork`
 
-End-to-end Data Science project focused on analyzing and predicting operational demand in a national network of veterinary clinics.
+End-to-end Data Science project focused on analyzing and predicting operational demand in a network of veterinary clinics.
+
+---
 
 ### Business Problem
-Veterinary clinic networks face high variability in daily demand, which impacts:
+
+Veterinary clinic networks face significant variability in daily demand, which directly impacts:
 
 - staff allocation  
 - service capacity  
-- wait times  
-- operational efficiency  
+- waiting times  
+- overall operational efficiency  
 
-The objective is to anticipate demand and improve operational planning through data-driven models.
+Without accurate forecasting, clinics operate reactively, leading to inefficiencies in both resource utilization and service quality.
+
+The objective of this project is to anticipate demand and support operational planning through data-driven models.
+
+---
 
 ### Dataset Overview
-Synthetic dataset simulating a national veterinary network:
+
+Synthetic dataset designed to simulate a veterinary clinic network:
 
 - 50 clinics  
 - 14 cities  
@@ -30,47 +38,64 @@ Synthetic dataset simulating a national veterinary network:
 - 25,000 pets  
 - 753,441 visits  
 - $111,878,238 total revenue  
-- ~90,000 daily operational records  
+
+The dataset includes detailed operational records, enabling demand analysis at a daily level.
+
+---
 
 ### Analytical Approach
-The project follows a complete Data Science pipeline:
 
-- data generation and validation  
+The project follows a complete Data Science workflow:
+
+- synthetic data generation  
 - exploratory data analysis  
-- feature engineering (behavioral, operational, temporal)  
+- feature engineering (temporal and behavioral features)  
 - clinic segmentation using unsupervised learning  
-- demand forecasting using machine learning  
-- model interpretability using SHAP  
+- demand forecasting using machine learning models  
+- model explainability using SHAP  
+
+---
 
 ### Model Performance
-Best model results:
 
-- R² ≈ 0.95  
-- MAE ≈ 0.84  
-- RMSE ≈ 1.08  
+The best-performing model was **Gradient Boosting**, selected based on comparative evaluation.
 
-The model accurately predicts daily demand at the clinic level.
+Results:
+
+- R² ≈ 0.66  
+- MAE ≈ 2–3 visits  
+- RMSE ≈ 2.9 visits  
+
+These results indicate that the model captures temporal demand patterns with sufficient accuracy for operational planning.
+
+---
 
 ### Key Insights
-- Demand follows consistent temporal patterns  
+
+- Demand follows identifiable temporal patterns  
 - Recent demand is the strongest predictor of future visits  
-- Clinics operate with different performance profiles  
-- Higher utilization is associated with higher revenue  
+- Clinics operate under different performance profiles  
+- Demand is not purely random and can be modeled effectively  
+
+---
 
 ### Business Impact
+
 The solution enables:
 
 - improved demand forecasting  
-- better resource allocation  
-- optimization of clinic capacity  
-- reduction of operational inefficiencies  
+- more efficient staff planning  
+- better allocation of clinical resources  
+- reduction of operational uncertainty  
+
+This supports a transition from reactive to proactive operational management.
+
+---
 
 ### Tools & Technologies
+
 - Python  
 - Pandas / NumPy  
 - Scikit-learn  
 - SHAP  
 - Matplotlib / Seaborn  
-- Time Series Analysis  
-
----
