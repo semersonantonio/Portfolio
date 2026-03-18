@@ -1,5 +1,21 @@
 ## Previsión de la demanda de la red de clínicas veterinarias
 
+### Presentación
+
+[Ver presentación completa (PDF)](./presentation_mexicans.pdf)
+
+#### Vista previa de la presentación
+
+Las principales diapositivas del proyecto están disponibles como imágenes
+para facilitar una rápida visualización:
+
+📁 `figures/07_presentation/`
+
+![Slide 1](figures/07_presentation/Slide1.jpg)
+![Slide 2](figures/07_presentation/Slide2.jpg)
+![Slide 3](figures/07_presentation/Slide3.jpg)
+
+
 ---
 
 ### Introducción
