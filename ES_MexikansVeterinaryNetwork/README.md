@@ -11,9 +11,9 @@ para facilitar una rápida visualización:
 
 📁 `figures/07_presentation/`
 
-![Slide 1](figures/07_presentation/0.jpg)
-![Slide 2](figures/07_presentation/1.jpg)
-![Slide 3](figures/07_presentation/2.jpg)
+![Slide 1](figures/07_presentation/00.jpg)
+![Slide 2](figures/07_presentation/01.jpg)
+![Slide 3](figures/07_presentation/02.jpg)
 
 
 ---
