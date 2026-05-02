@@ -1,101 +1,52 @@
-### Welcome to my Data Science portfolio.
+# 📊 Data Science Portfolio — Emerson Antonio da Silva
 
-This repository showcases projects focused on predictive analytics, machine learning, and operational optimization, with an emphasis on real-world business applications.
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://linkedin.com/in/semersonantonio)
+[![Email](https://img.shields.io/badge/Email-EA4335?style=flat-square&logo=gmail&logoColor=white)](mailto:s.emersonantonio@gmail.com)
+
+> Data Science student at UNIR · AI QA Engineer Intern at ObviousFuture · Madrid, Spain
+
+This repository showcases end-to-end Data Science projects focused on predictive analytics, machine learning, and operational optimization, with emphasis on real-world business applications.
 
 ---
 
-## Featured Project
+## 🗂️ Projects
 
-## 01 Mexikans Analytics — Demand Forecasting for Veterinary Clinics  
+| # | Project | Domain | Tech | Status |
+|---|---|---|---|---|
+| 01 | [🐾 Mexikans Analytics — Demand Forecasting for Veterinary Clinics](./ES_MexikansVeterinaryNetwork) | Healthcare / Operations | Python, Pandas, Scikit-learn | ✅ Complete |
+
+---
+
+## 01 · Mexikans Analytics — Demand Forecasting for Veterinary Clinics
+
 **Folder:** `ES_MexikansVeterinaryNetwork`
 
-End-to-end Data Science project focused on analyzing and predicting operational demand in a network of veterinary clinics.
-
----
+End-to-end Data Science project focused on analysing and predicting operational demand in a network of veterinary clinics.
 
 ### Business Problem
 
 Veterinary clinic networks face significant variability in daily demand, which directly impacts:
 
-- staff allocation  
-- service capacity  
-- waiting times  
-- overall operational efficiency  
+- Staff allocation
+- Service capacity
+- Waiting times
+- Overall operational efficiency
 
-Without accurate forecasting, clinics operate reactively, leading to inefficiencies in both resource utilization and service quality.
+Without accurate forecasting, clinics operate reactively, leading to inefficiencies in resource utilisation and service quality.
 
-The objective of this project is to anticipate demand and support operational planning through data-driven models.
+**Objective:** Anticipate demand and support operational planning through data-driven models.
 
----
+### Key Highlights
 
-### Dataset Overview
-
-Synthetic dataset designed to simulate a veterinary clinic network:
-
-- 50 clinics  
-- 14 cities  
-- 13,560 customers  
-- 25,000 pets  
-- 753,441 visits  
-- $111,878,238 total revenue  
-
-The dataset includes detailed operational records, enabling demand analysis at a daily level.
+- Exploratory Data Analysis (EDA) on clinic visit patterns
+- Feature engineering from temporal and categorical variables
+- Multiple regression and time-series forecasting models evaluated
+- Business-oriented insights and recommendations
 
 ---
 
-### Analytical Approach
+## 📬 Contact
 
-The project follows a complete Data Science workflow:
-
-- synthetic data generation  
-- exploratory data analysis  
-- feature engineering (temporal and behavioral features)  
-- clinic segmentation using unsupervised learning  
-- demand forecasting using machine learning models  
-- model explainability using SHAP  
-
----
-
-### Model Performance
-
-The best-performing model was **Gradient Boosting**, selected based on comparative evaluation.
-
-Results:
-
-- R² ≈ 0.66  
-- MAE ≈ 2–3 visits  
-- RMSE ≈ 2.9 visits  
-
-These results indicate that the model captures temporal demand patterns with sufficient accuracy for operational planning.
-
----
-
-### Key Insights
-
-- Demand follows identifiable temporal patterns  
-- Recent demand is the strongest predictor of future visits  
-- Clinics operate under different performance profiles  
-- Demand is not purely random and can be modeled effectively  
-
----
-
-### Business Impact
-
-The solution enables:
-
-- improved demand forecasting  
-- more efficient staff planning  
-- better allocation of clinical resources  
-- reduction of operational uncertainty  
-
-This supports a transition from reactive to proactive operational management.
-
----
-
-### Tools & Technologies
-
-- Python  
-- Pandas / NumPy  
-- Scikit-learn  
-- SHAP  
-- Matplotlib / Seaborn  
+- **LinkedIn:** [linkedin.com/in/semersonantonio](https://linkedin.com/in/semersonantonio)
+- **Email:** s.emersonantonio@gmail.com
+- **Location:** Madrid, Spain
