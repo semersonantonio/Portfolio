@@ -85,8 +85,10 @@ Five-stage pipeline:
 | `tg_hdl_ratio` | Insulin resistance proxy (ideal < 2.0) |
 | `pulse_pressure` | Arterial stiffness marker (>60 mmHg = elevated risk) |
 | `metabolic_score` | Composite of BMI, glucose, blood pressure |
-| `lifestyle_score` | Physical activity × smoking interaction |
-| + 3 interaction terms | Synergistic effects invisible to linear models |
+| `lifestyle_score` | Composite of normalised physical activity, diet quality, and sleep (higher = healthier lifestyle) |
+| `abdominal_obesity` | Sex-specific waist flag: ≥102 cm (men) or ≥88 cm (women) — central obesity marker |
+| `age_x_diabetes` | Age × diabetes flag — compounding glycaemic risk as patients age |
+| `smoking_x_htn` | Smoking severity × hypertension — captures the particularly atherogenic co-occurrence |
 
 ### 4 · Modelling
 Six algorithms trained and evaluated with 5-fold cross-validation:
@@ -143,7 +145,7 @@ Six models were trained on 9,558 SMOTE-balanced samples and evaluated on 2,000 h
 | t = 0.50 (default) | 0.747 | 0.742 | 0.744 |
 | **t = 0.35 (screening)** | **0.863** | **0.650** | **0.742** |
 
-At **t = 0.35**, the model correctly identifies **~9 out of every 10** high-risk patients. The reduction in precision (1 in 2 flagged patients is a true positive) is clinically acceptable — an unnecessary follow-up exam is far less costly than a missed cardiovascular event. The Precision-Recall curve in Notebook 05 provides a full trade-off analysis across the threshold range 0.15–0.85.
+At **t = 0.35**, the model correctly identifies **~9 out of every 10** high-risk patients. The reduction in precision (~2 in 3 flagged patients is a true positive, Precision 0.650) is clinically acceptable — an unnecessary follow-up exam is far less costly than a missed cardiovascular event. The Precision-Recall curve in Notebook 05 provides a full trade-off analysis across the threshold range 0.15–0.85.
 
 ---
 
@@ -187,7 +189,7 @@ jupyter notebook notebooks/01_data_generation.ipynb
 | NumPy / Pandas | Data manipulation |
 | Matplotlib / Seaborn | Visualisation |
 | Scikit-learn | Preprocessing, modelling, evaluation |
-| XGBoost | Gradient boosting champion model |
+| XGBoost | Gradient boosting ensemble (evaluated alongside champion) |
 | imbalanced-learn | SMOTE oversampling |
 | Jupyter Notebook | Development environment |
 
