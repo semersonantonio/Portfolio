@@ -41,6 +41,24 @@ CardioRisk_ML/
 └── README.md
 ```
 
+
+---
+
+## 🎞️ Presentation Preview
+
+> 📁 `figures/presentation/` — 10-slide summary deck exported from the full PPTX
+
+![Slide 1 — Title](figures/presentation/00.jpg)
+![Slide 2 — Project Overview](figures/presentation/01.jpg)
+![Slide 3 — Dataset](figures/presentation/02.jpg)
+![Slide 4 — Pipeline](figures/presentation/03.jpg)
+![Slide 5 — Feature Engineering](figures/presentation/04.jpg)
+![Slide 6 — Model Comparison](figures/presentation/05.jpg)
+![Slide 7 — Full Results](figures/presentation/06.jpg)
+![Slide 8 — Optimisation & Threshold](figures/presentation/07.jpg)
+![Slide 9 — Key Findings](figures/presentation/08.jpg)
+![Slide 10 — Conclusions](figures/presentation/09.jpg)
+
 ---
 
 ## 🔬 Dataset
@@ -54,6 +72,8 @@ CardioRisk_ML/
 | Source | Synthetic — calibrated vs. Framingham Heart Study & NHANES |
 | Seed | 42 (fully reproducible) |
 
+![Class Balance & Risk Distribution](data/eda_charts/01_target.png)
+
 Clinical correlations mirror established medical literature: blood pressure rises with age and BMI, HDL is naturally higher in women, and the cardiovascular risk score is derived from the Framingham Risk Equation.
 
 ---
@@ -64,9 +84,16 @@ Clinical correlations mirror established medical literature: blood pressure rise
 Synthetic patient records generated using `numpy` with medically validated distributions. Age is sampled from a truncated normal (30–80 years), sex and race follow population study proportions, and comorbidities are derived probabilistically from lab values.
 
 ### 2 · Exploratory Data Analysis
+![Correlation Heatmap](data/eda_charts/04_correlation.png)
+![Feature Ranking by Risk Group](data/eda_charts/10_feature_ranking.png)
+
 Distribution analysis across risk groups, correlation heatmaps, sex-stratified comparisons, and identification of the typical high-risk patient profile. EDA findings directly informed the feature engineering strategy in Step 3.
 
 ### 3 · Preprocessing & Feature Engineering
+
+![Engineered Features Validation](data/eda_charts/11_engineered_features.png)
+![SMOTE Class Balancing](data/eda_charts/12_smote.png)
+
 Five-stage pipeline:
 
 | Stage | Detail |
@@ -113,6 +140,11 @@ Self-contained notebook that re-runs the full pipeline and consolidates all find
 
 ### Model Comparison
 
+![Model Metric Comparison](data/eda_charts/13_metric_comparison.png)
+![ROC Curves — All Models](data/eda_charts/14_roc_curves.png)
+![Feature Importance](data/eda_charts/16_feature_importance.png)
+![Performance Heatmap](data/eda_charts/18_performance_heatmap.png)
+
 Six models were trained on 9,558 SMOTE-balanced samples and evaluated on 2,000 held-out patients at the natural class distribution. Champion selected by composite score (Recall × 0.40 + AUC × 0.40 + F1 × 0.10 + Accuracy × 0.05).
 
 | Model | Accuracy | Precision | Recall | F1 | AUC | Score |
@@ -128,6 +160,8 @@ Six models were trained on 9,558 SMOTE-balanced samples and evaluated on 2,000 h
 
 ### Optimisation Impact (v1 → v2)
 
+![Before vs After Optimisation](data/eda_charts/23_before_after.png)
+
 | Metric | v1 Baseline | v2 Optimised | Gain |
 |---|---|---|---|
 | Accuracy | 0.734 | 0.792 | +7.9% |
@@ -140,6 +174,8 @@ Six models were trained on 9,558 SMOTE-balanced samples and evaluated on 2,000 h
 
 ### Recommended Threshold
 
+![Threshold Analysis](data/eda_charts/22_threshold_analysis.png)
+
 | Threshold | Recall | Precision | F1 |
 |---|---|---|---|
 | t = 0.50 (default) | 0.747 | 0.742 | 0.744 |
@@ -150,6 +186,9 @@ At **t = 0.35**, the model correctly identifies **~9 out of every 10** high-risk
 ---
 
 ## 🔑 Key Findings
+
+![Clinical Profile — High Risk vs Low Risk](data/eda_charts/19_clinical_profile.png)
+![Modifiable Risk Factors](data/eda_charts/20_modifiable_factors.png)
 
 - **Glycaemic markers dominate.** Fasting glucose and HbA1c were the top-ranked variables across all tree-based models, reflecting the strong causal link between insulin resistance and cardiovascular disease.
 
