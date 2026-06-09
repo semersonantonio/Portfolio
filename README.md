@@ -1,76 +1,78 @@
-### Welcome to my Data Science portfolio.
+# 📊 Data Science Portfolio — Emerson Antonio da Silva
 
-This repository showcases projects focused on predictive analytics, machine learning, and operational optimization, with an emphasis on real-world business applications.
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://linkedin.com/in/semersonantonio)
+[![Email](https://img.shields.io/badge/Email-EA4335?style=flat-square&logo=gmail&logoColor=white)](mailto:s.emersonantonio@gmail.com)
+
+> Data Science student at UNIR · AI QA Engineer Intern at ObviousFuture · Madrid, Spain
+
+This repository showcases end-to-end Data Science projects focused on predictive analytics, machine learning, and operational optimization, with emphasis on real-world business applications.
 
 ---
 
-## Featured Project
+## 🗂️ Projects
 
-## 01 Mexikans Analytics — Demand Forecasting for Veterinary Clinics  
+| # | Project | Domain | Tech | Status |
+|---|---|---|---|---|
+| 01 | [🐾 Mexikans Analytics — Demand Forecasting for Veterinary Clinics](./ES_MexikansVeterinaryNetwork) | Healthcare / Operations | Python, Pandas, Scikit-learn | ✅ Complete |
+| 02 | [🫀 CardioRisk ML — Cardiovascular Risk Prediction](./CardioRisk_ML) | Healthcare / Machine Learning | Python, Scikit-learn, XGBoost, SMOTE | ✅ Complete |
+
+---
+
+## 01 · Mexikans Analytics — Demand Forecasting for Veterinary Clinics
+
 **Folder:** `ES_MexikansVeterinaryNetwork`
 
-End-to-end Data Science project focused on analyzing and predicting operational demand in a national network of veterinary clinics.
+End-to-end Data Science project focused on analysing and predicting operational demand in a network of veterinary clinics.
 
 ### Business Problem
-Veterinary clinic networks face high variability in daily demand, which impacts:
 
-- staff allocation  
-- service capacity  
-- wait times  
-- operational efficiency  
+Veterinary clinic networks face significant variability in daily demand, which directly impacts:
 
-The objective is to anticipate demand and improve operational planning through data-driven models.
+- Staff allocation
+- Service capacity
+- Waiting times
+- Overall operational efficiency
 
-### Dataset Overview
-Synthetic dataset simulating a national veterinary network:
+Without accurate forecasting, clinics operate reactively, leading to inefficiencies in resource utilisation and service quality.
 
-- 50 clinics  
-- 14 cities  
-- 13,560 customers  
-- 25,000 pets  
-- 753,441 visits  
-- $111,878,238 total revenue  
-- ~90,000 daily operational records  
+**Objective:** Anticipate demand and support operational planning through data-driven models.
 
-### Analytical Approach
-The project follows a complete Data Science pipeline:
+### Key Highlights
 
-- data generation and validation  
-- exploratory data analysis  
-- feature engineering (behavioral, operational, temporal)  
-- clinic segmentation using unsupervised learning  
-- demand forecasting using machine learning  
-- model interpretability using SHAP  
-
-### Model Performance
-Best model results:
-
-- R² ≈ 0.95  
-- MAE ≈ 0.84  
-- RMSE ≈ 1.08  
-
-The model accurately predicts daily demand at the clinic level.
-
-### Key Insights
-- Demand follows consistent temporal patterns  
-- Recent demand is the strongest predictor of future visits  
-- Clinics operate with different performance profiles  
-- Higher utilization is associated with higher revenue  
-
-### Business Impact
-The solution enables:
-
-- improved demand forecasting  
-- better resource allocation  
-- optimization of clinic capacity  
-- reduction of operational inefficiencies  
-
-### Tools & Technologies
-- Python  
-- Pandas / NumPy  
-- Scikit-learn  
-- SHAP  
-- Matplotlib / Seaborn  
-- Time Series Analysis  
+- Exploratory Data Analysis (EDA) on clinic visit patterns
+- Feature engineering from temporal and categorical variables
+- Multiple regression and time-series forecasting models evaluated
+- Business-oriented insights and recommendations
 
 ---
+
+## 02 · CardioRisk ML — Cardiovascular Risk Prediction
+
+**Folder:** `CardioRisk_ML`
+
+End-to-end machine learning pipeline for binary classification of cardiovascular risk in a synthetic clinical dataset of 10,000 adult patients, calibrated against the Framingham Heart Study and NHANES.
+
+### Clinical Questions
+
+This project addresses three clinical questions:
+
+- Which clinical and lifestyle factors most drive cardiovascular risk?
+- Can a machine learning model reliably identify at-risk patients preventively?
+- What probability threshold maximises clinical utility in a screening context?
+
+### Key Highlights
+
+- Synthetic dataset of 10,000 patients with 29 clinical, lifestyle, and demographic variables
+- 8 engineered clinical features: LDL/HDL ratio, metabolic syndrome score, lifestyle score, and 3 interaction terms
+- 6 algorithms evaluated with 5-fold cross-validation and a composite clinical scoring metric (Recall × 0.40 + AUC × 0.40)
+- Champion model: Logistic Regression — AUC 0.866, Recall 0.747 at default threshold
+- At screening threshold t = 0.35: Recall 0.863 (~9 in 10 high-risk patients correctly identified)
+- Includes a 10-slide presentation deck summarising all findings
+
+---
+
+## 📬 Contact
+
+- **LinkedIn:** [linkedin.com/in/semersonantonio](https://linkedin.com/in/semersonantonio)
+- **Email:** s.emersonantonio@gmail.com
+- **Location:** Madrid, Spain
