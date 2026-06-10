@@ -1,6 +1,6 @@
 # 📊 Data Science Portfolio — Emerson Antonio da Silva
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://linkedin.com/in/semersonantonio)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://linkedin.com/in/emersonantoniods)
 [![Email](https://img.shields.io/badge/Email-EA4335?style=flat-square&logo=gmail&logoColor=white)](mailto:s.emersonantonio@gmail.com)
 
 > Data Science student at UNIR · AI QA Engineer Intern at ObviousFuture · Madrid, Spain
@@ -73,6 +73,6 @@ This project addresses three clinical questions:
 
 ## 📬 Contact
 
-- **LinkedIn:** [linkedin.com/in/semersonantonio](https://linkedin.com/in/semersonantonio)
+- **LinkedIn:** [linkedin.com/in/emersonantoniods](https://linkedin.com/in/emersonantoniods)
 - **Email:** s.emersonantonio@gmail.com
 - **Location:** Madrid, Spain
