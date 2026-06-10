@@ -206,7 +206,7 @@ At **t = 0.35**, the model correctly identifies **~9 out of every 10** high-risk
 
 ```bash
 # 1 · Clone the repository
-git clone https://github.com/semersonantonio/Portfolio.git
+git clone https://github.com/emersonantoniods/Portfolio.git
 cd Portfolio/CardioRisk_ML
 
 # 2 · Install dependencies
@@ -239,6 +239,6 @@ jupyter notebook notebooks/01_data_generation.ipynb
 **Emerson Antonio da Silva**
 Data Science Student · AI QA Engineer Intern @ ObviousFuture · Madrid, Spain
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-semersonantonio-0077B5?style=flat&logo=linkedin)](https://linkedin.com/in/semersonantonio)
-[![GitHub](https://img.shields.io/badge/GitHub-semersonantonio-181717?style=flat&logo=github)](https://github.com/semersonantonio)
-[![Portfolio](https://img.shields.io/badge/Portfolio-View%20All%20Projects-2ECC71?style=flat)](https://github.com/semersonantonio/Portfolio)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-emersonantoniods-0077B5?style=flat&logo=linkedin)](https://linkedin.com/in/emersonantoniods)
+[![GitHub](https://img.shields.io/badge/GitHub-emersonantoniods-181717?style=flat&logo=github)](https://github.com/emersonantoniods)
+[![Portfolio](https://img.shields.io/badge/Portfolio-View%20All%20Projects-2ECC71?style=flat)](https://github.com/emersonantoniods/Portfolio)
